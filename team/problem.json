@@ -1,0 +1,8 @@
+{
+  "name": "team",
+  "code": "team",
+  "title": "Team Contest",
+  "memory_limit": 2048,
+  "time_limit": 1.0,
+  "type": "Batch"
+}

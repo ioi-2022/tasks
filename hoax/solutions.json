@@ -1,0 +1,48 @@
+{
+  "solution.cpp": {
+    "verdict": "model_solution"
+  },
+  "jonathanirvings_ac.cpp": {
+    "verdict": "correct"
+  },
+  "jonathanirvings_alt.cpp": {
+    "verdict": "correct"
+  },
+  "jonathanirvings_wa.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "samples": "correct"
+    }
+  },
+  "prabowo_ac.cpp": {
+    "verdict": "correct"
+  },
+  "prabowo_solution-small-S.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "small-S": "correct"
+    }
+  },
+  "prabowo_solution-fourth.cpp": {
+    "verdict": "correct",
+    "except": {
+      "cubic": "time_limit",
+      "quadratic": "time_limit",
+      "full": "time_limit"
+    }
+  },
+  "prabowo_solution-cubic.cpp": {
+    "verdict": "correct",
+    "except": {
+      "quadratic": "time_limit",
+      "full": "time_limit"
+    }
+  },
+  "prabowo_solution-quadratic.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "time_limit"
+    }
+  }
+}

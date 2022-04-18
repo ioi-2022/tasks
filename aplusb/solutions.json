@@ -1,0 +1,14 @@
+{
+  "solution.cpp": {
+    "verdict": "model_solution"
+  },
+  "solution-bitwise.cpp": {
+    "verdict": "correct"
+  },
+  "solution-b-zero.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "bZero": "correct"
+    }
+  }
+}

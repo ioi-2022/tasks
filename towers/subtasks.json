@@ -1,0 +1,45 @@
+{
+  "subtask_sensitive_validators": ["validator.cpp {subtask}"],
+  "subtasks": {
+    "samples": {
+      "index": 0,
+      "score": 0,
+      "validators": []
+    },
+    "bitonic": {
+      "index": 1,
+      "score": 4,
+      "validators": []
+    },
+    "quadratic": {
+      "index": 2,
+      "score": 11,
+      "validators": []
+    },
+    "linear": {
+      "index": 3,
+      "score": 12,
+      "validators": []
+    },
+    "d-equals-one": {
+      "index": 4,
+      "score": 14,
+      "validators": []
+    },
+    "full-interval": {
+      "index": 5,
+      "score": 17,
+      "validators": []
+    },
+    "constant-d": {
+      "index": 6,
+      "score": 19,
+      "validators": []
+    },
+    "full": {
+      "index": 7,
+      "score": 23,
+      "validators": []
+    }
+  }
+}

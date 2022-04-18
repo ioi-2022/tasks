@@ -1,0 +1,3 @@
+[submodule "tps"]
+	path = tps
+	url = git@github.com:ioi-2022/tps.git

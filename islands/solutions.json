@@ -1,0 +1,125 @@
+{
+  "solution.cpp": {
+    "verdict": "model_solution"
+  },
+  "solution-n-equals-two.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "n-equals-two": "correct"
+    }
+  },
+  "solution-complete.cpp": {
+    "verdict": "failed",
+    "except": {
+      "complete": "correct"
+    }
+  },
+  "solution-bidirectional.cpp": {
+    "verdict": "failed",
+    "except": {
+      "complete": "correct",
+      "bidirectional": "correct"
+    }
+  },
+  "solution-double.cpp": {
+    "verdict": "failed",
+    "except": {
+      "double": "correct"
+    }
+  },
+  "solution-wa-dont-check-outdeg-0.cpp": {
+    "verdict": "partially_correct",
+    "except": {
+      "double": "incorrect",
+      "full": "incorrect"
+    }
+  },
+  "solution-prabowo-ac.cpp": {
+    "verdict": "correct"
+  },
+  "solution-prabowo-fail.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "n-equals-two": "correct",
+      "complete": "correct",
+      "double": "correct"
+    }
+  },
+  "solution-ayaze-bidirectional.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "complete": "correct",
+      "bidirectional": "correct"
+    }
+  },
+  "solution-ayaze-complete.cpp": {
+    "verdict": "failed",
+    "except": {
+      "complete": "correct"
+    }
+  },
+  "solution-ayaze-double-edge.cpp": {
+    "verdict": "failed",
+    "except": {
+      "double": "correct"
+    }
+  },
+  "solution-ayaze-full.cpp": {
+    "verdict": "correct"
+  },
+  "solution-ayaze-n-equals-two.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "n-equals-two": "correct"
+    }
+  },
+  "wa-ayaze-bidirectional.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "complete": "correct"
+    }
+  },
+  "wa-ayaze-double-edge.cpp": {
+    "verdict": "failed"
+  },
+  "solution-yoshiyuki-incorrect-cycle-finding.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "partially_correct",
+      "n-equals-two": "partially_correct",
+      "complete": "partially_correct",
+      "bidirectional": "partially_correct"
+    }
+  },
+  "solution-yoshiyuki-incorrect-exclude-dag.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "partially_correct",
+      "n-equals-two": "partially_correct",
+      "complete": "partially_correct",
+      "bidirectional": "partially_correct",
+      "double": "partially_correct"
+    }
+  },
+  "solution-yoshiyuki-incorrect-random-branch.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "partially_correct",
+      "n-equals-two": "partially_correct",
+      "complete": "partially_correct",
+      "bidirectional": "partially_correct",
+      "double": "partially_correct"
+    }
+  },
+  "solution-yoshiyuki-incorrect-random-branch-valid-cycle.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "partially_correct",
+      "n-equals-two": "partially_correct",
+      "complete": "partially_correct",
+      "bidirectional": "partially_correct",
+      "double": "partially_correct"
+    }
+  }
+}

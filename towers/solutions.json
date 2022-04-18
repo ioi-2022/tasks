@@ -1,0 +1,144 @@
+{
+  "solution.cpp": {
+    "verdict": "model_solution"
+  },
+  "solution-bitonic.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "bitonic": "correct"
+    }
+  },
+  "solution-quadratic.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct"
+    }
+  },
+  "solution-linear.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct",
+      "linear": "correct"
+    }
+  },
+  "solution-d-equals-one.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "d-equals-one": "correct"
+    }
+  },
+  "solution-full-interval.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "samples": "correct",
+      "full-interval": "correct"
+    }
+  },
+  "solution-constant-d.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct",
+      "linear": "correct",
+      "d-equals-one": "correct",
+      "constant-d": "correct"
+    }
+  },
+  "solution-log2n.cpp": {
+    "verdict": "correct"
+  },
+  "solution-o-ans.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "bitonic": "correct",
+      "samples": "correct",
+      "quadratic": "correct",
+      "linear": "correct"
+    }
+  },
+  "solution-full-interval-wa.cpp": {
+    "verdict": "incorrect"
+  },
+  "solution-wa.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "samples": "correct",
+      "full-interval": "correct"
+    }
+  },
+  "solution-prabowo-wavelet.cpp": {
+    "verdict": "correct"
+  },
+  "solution-prabowo-wa-greedy.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "quadratic": "incorrect",
+      "linear": "incorrect"
+    }
+  },
+  "solution-amnu-ac.cpp": {
+    "verdict": "correct"
+  },
+  "solution-amnu-linear.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct",
+      "linear": "correct"
+    }
+  },
+  "solution-ayaze-linear.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct",
+      "linear": "correct"
+    }
+  },
+  "solution-ayaze-bitonic.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "bitonic": "correct"
+    }
+  },
+  "solution-ayaze-d-one.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "d-equals-one": "correct"
+    }
+  },
+  "solution-ayaze-full-interval.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "samples": "correct",
+      "full-interval": "correct"
+    }
+  },
+  "solution-ayaze-d-equals.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct",
+      "linear": "correct",
+      "d-equals-one": "correct",
+      "constant-d": "correct"
+    }
+  },
+  "solution-fausta-tle.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct"
+    }
+  },
+  "solution-fausta-tle-optimized.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct"
+    }
+  }
+}

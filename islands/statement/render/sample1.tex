@@ -1,0 +1,12 @@
+\begin{tikzpicture}[auto, node distance=2cm, thick]
+    \node (0) {0};
+    \node [right of=0] (1) {1};
+    \node [below of=1] (2) {2};
+    \node [left  of=2] (3) {3};
+
+    \draw (0) -- (1) node[canoe,yshift=-0.5em,label={[labelright]0}]{\includegraphics[width=1em]{canoe.png}};
+    \draw (1) -- (2) node[canoe,xshift=-0.5em,label={[labelright]1}]{\includegraphics[width=1em,angle=270]{canoe.png}};
+    \draw (2) -- (3) node[canoe,above,yshift=-0.5em,label={[labelleft]2}]{\includegraphics[width=1em]{canoe.png}};
+    \draw (0) -- (3) node[canoe,left, xshift=+0.5em,label={[labelleft]3}]{\includegraphics[width=1em,angle=90]{canoe.png}};
+    \draw (3) -- (1) node[canoe,xshift=0.5em,yshift=-0.5em,label={[labelright]4}]{\includegraphics[width=1em,angle=45]{canoe.png}};
+\end{tikzpicture}

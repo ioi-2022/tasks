@@ -1,0 +1,52 @@
+{
+  "subtask_sensitive_validators": [
+    "validator.cpp {subtask}"
+  ],
+  "subtasks": {
+    "samples": {
+      "index": 0,
+      "score": 0,
+      "validators": []
+    },
+    "sum-all": {
+      "index": 1,
+      "score": 3,
+      "validators": []
+    },
+    "two-columns": {
+      "index": 2,
+      "score": 6,
+      "validators": []
+    },
+    "one-dim": {
+      "index": 3,
+      "score": 9,
+      "validators": []
+    },
+    "cubic-small-y": {
+      "index": 4,
+      "score": 14,
+      "validators": []
+    },
+    "cubic": {
+      "index": 5,
+      "score": 21,
+      "validators": []
+    },
+    "quadratic": {
+      "index": 6,
+      "score": 17,
+      "validators": []
+    },
+    "max-per-column": {
+      "index": 7,
+      "score": 14,
+      "validators": []
+    },
+    "full": {
+      "index": 8,
+      "score": 16,
+      "validators": []
+    }
+  }
+}

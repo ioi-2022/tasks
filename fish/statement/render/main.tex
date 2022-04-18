@@ -1,0 +1,29 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+
+\begin{document}
+    \definecolor{water}{RGB}{255, 255, 255}
+    \definecolor{pier}{RGB}{186, 140, 99}
+
+    \tikzstyle{every node}=[font=\Large]
+    \tikzstyle{light}=[opacity=0.4]
+    \tikzstyle{axisnode}=[scale=0.65]
+    \def\snaxis{
+        \node[axisnode] at (-0.25, 0.5) {0};
+        \node[axisnode] at (-0.25, 1.5) {1};
+        \node[axisnode] at (-0.25, 2.5) {2};
+        \node[axisnode] at (-0.25, 3.5) {3};
+        \node[axisnode] at (-0.25, 4.5) {4};
+    }
+    \def\weaxis{
+        \node[axisnode] at (0.5, -0.25) {0};
+        \node[axisnode] at (1.5, -0.25) {1};
+        \node[axisnode] at (2.5, -0.25) {2};
+        \node[axisnode] at (3.5, -0.25) {3};
+        \node[axisnode] at (4.5, -0.25) {4};
+    }
+
+    \include{sample1-pond}
+    \include{sample1-pier}
+\end{document}

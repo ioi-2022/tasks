@@ -1,0 +1,8 @@
+\begin{tikzpicture}[auto, node distance=2cm, thick]
+    \node (0) {0};
+    \node [right of=0] (1) {1};
+
+    \draw (0) -- (1) node[canoe,yshift=-0.5em,label={[labelright]0}]{\includegraphics[width=1em]{canoe.png}};
+    \draw (1) -- (0) node[canoe,above,yshift=-0.5em,label={[labelleft]1}]{\includegraphics[width=1em]{canoe.png}};
+    \draw (1) -- (0) node[canoe,below,yshift=+1.0em,label={[labelleft,below,yshift=0.3em]2}]{\includegraphics[width=1em]{canoe.png}};
+\end{tikzpicture}

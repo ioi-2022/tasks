@@ -1,0 +1,93 @@
+{
+  "solution-prabowo-ac.cpp": {
+    "verdict": "model_solution"
+  },
+  "solution-prabowo-quadratic.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "cubic-small-y": "correct",
+      "cubic": "correct",
+      "quadratic": "correct"
+    }
+  },
+  "solution-jonathanirvings.cpp": {
+    "verdict": "correct"
+  },
+  "solution-ayaze-cubic.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "cubic-small-y": "correct",
+      "cubic": "correct"
+    }
+  },
+  "solution-ayaze-even-x-overflow.cpp": {
+    "verdict": "incorrect"
+  },
+  "solution-ayaze-even-x.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "sum-all": "correct"
+    }
+  },
+  "solution-ayaze-quadratic.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "cubic-small-y": "correct",
+      "cubic": "correct",
+      "quadratic": "correct"
+    }
+  },
+  "solution-ayaze-max-per-column.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "one-dim": "correct",
+      "max-per-column": "correct"
+    }
+  },
+  "solution-ayaze-max-per-column-binarysearch.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "one-dim": "correct",
+      "max-per-column": "correct"
+    }
+  },
+  "solution-ayaze-x-atmost-one.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "two-columns": "correct"
+    }
+  },
+  "solution-ayaze-x-atmost-one-wrong.cpp": {
+    "verdict": "incorrect"
+  },
+  "solution-ayaze-y-small.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "one-dim": "correct",
+      "cubic-small-y": "correct"
+    }
+  },
+  "solution-ayaze-y-zero.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "samples": "correct",
+      "one-dim": "correct"
+    }
+  },
+  "solution-wiwitrifai.cpp": {
+    "verdict": "correct"
+  },
+  "solution-azaky-wa.cpp": {
+    "verdict": "failed",
+    "except": {
+      "samples": "correct",
+      "one-dim": "correct"
+    }
+  }
+}

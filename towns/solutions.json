@@ -1,0 +1,65 @@
+{
+  "solution.cpp": {
+    "verdict": "model_solution"
+  },
+  "hocky_5n.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "joshua_5n.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "jonathanirvings_bf_all.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "protocol_violation"
+    }
+  },
+  "jonathanirvings_bf.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "protocol_violation"
+    }
+  },
+  "jonathanirvings_nlgn.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "jonathanirvings_8n.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "jonathanirvings_5n_deterministic.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "jonathanirvings_5n_rnd.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "jonathanirvings_5n_tournament.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "prabowo-6n.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  }
+}

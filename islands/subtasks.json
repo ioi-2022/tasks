@@ -1,0 +1,36 @@
+{
+  "subtask_sensitive_validators": ["validator.cpp {subtask}"],
+  "subtasks": {
+    "samples": {
+      "index": 0,
+      "score": 0,
+      "validators": []
+    },
+    "n-equals-two": {
+      "index": 1,
+      "score": 5,
+      "validators": []
+    },
+    "complete": {
+      "index": 2,
+      "score": 5,
+      "validators": []
+    },
+    "bidirectional": {
+      "index": 3,
+      "score": 21,
+      "validators": []
+    },
+    "double": {
+      "index": 4,
+      "score": 24,
+      "validators": []
+    },
+    "full": {
+      "index": 5,
+      "score": 45,
+      "validators": []
+    }
+  }
+}
+

@@ -1,0 +1,16 @@
+\begin{tikzpicture}[auto, node distance=2cm, thick]
+    \node (0) {0};
+    \node [below left  of=0] (1) {1};
+    \node [below left  of=1] (2) {2};
+    \node [below       of=2 ]     (3) {3};
+    \node [below       of=1 ] (4) {4};
+    \node [below right of=1 ]     (5) {5};
+    \node [below right of=0 ] (6) {6};
+
+    \draw[->] (1) -- (0);
+    \draw[->] (2) -- (1);
+    \draw[->] (3) -- (2);
+    \draw[->] (4) -- (1);
+    \draw[->] (5) -- (1);
+    \draw[->] (6) -- (0);
+\end{tikzpicture}

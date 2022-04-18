@@ -1,0 +1,108 @@
+{
+  "solution.cpp": {
+    "verdict": "model_solution"
+  },
+  "solution-prabowo-inverse.cpp": {
+    "verdict": "correct"
+  },
+  "solution-prabowo-count-degrees.cpp": {
+    "verdict": "correct"
+  },
+  "solution-prabowo-quadratic-init.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "n-equals-one": "correct",
+      "brute-binary": "correct",
+      "brute": "correct",
+      "quadratic": "correct"
+    }
+  },
+  "solution-prabowo-no-segtree.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "n-equals-one": "correct",
+      "brute-binary": "correct",
+      "brute": "correct",
+      "perfect-point-update": "correct",
+      "quadratic": "correct"
+    }
+  },
+  "solution-prabowo-binary.cpp": {
+    "verdict": "failed",
+    "except": {
+      "n-equals-one": "correct",
+      "brute-binary": "correct",
+      "perfect-point-update": "correct",
+      "perfect": "correct",
+      "binary": "correct"
+    }
+  },
+  "solution-prabowo-perfect-binary.cpp": {
+    "verdict": "failed",
+    "except": {
+      "perfect-point-update": "correct",
+      "perfect": "correct"
+    }
+  },
+  "solution-prabowo-perfect-binary-linear-update.cpp": {
+    "verdict": "failed",
+    "except": {
+      "perfect-point-update": "correct"
+    }
+  },
+  "solution-prabowo-brute.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "n-equals-one": "correct",
+      "brute-binary": "correct",
+      "brute": "correct"
+    }
+  },
+  "solution-prabowo-brute-binary.cpp": {
+    "verdict": "failed",
+    "except": {
+      "brute-binary": "correct"
+    }
+  },
+  "solution-prabowo-n-equals-one.cpp": {
+    "verdict": "failed",
+    "except": {
+      "n-equals-one": "correct"
+    }
+  },
+  "solution-ayaze-full.cpp": {
+    "verdict": "correct"
+  },
+  "solution-ayaze-dp.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "n-equals-one": "correct",
+      "brute-binary": "correct",
+      "brute": "correct",
+      "perfect-point-update": "correct"
+    }
+  },
+  "solution-jonathanirvings.cpp": {
+    "verdict": "correct"
+  },
+  "solution-hocky-quadratic-dp.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct",
+      "n-equals-one": "correct",
+      "brute-binary": "correct",
+      "brute": "correct"
+    }
+  },
+  "solution-hocky-segtree.cpp": {
+    "verdict": "failed",
+    "except": {
+      "perfect-point-update": "correct",
+      "perfect": "correct"
+    }
+  }
+}

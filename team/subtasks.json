@@ -1,0 +1,30 @@
+{
+  "subtask_sensitive_validators": ["validator.cpp {subtask}"],
+  "subtasks": {
+    "samples": {
+      "index": 0,
+      "score": 0,
+      "validators": []
+    },
+    "one-team": {
+      "index": 1,
+      "score": 6,
+      "validators": []
+    },
+    "exponential": {
+      "index": 2,
+      "score": 12,
+      "validators": []
+    },
+    "quadratic": {
+      "index": 3,
+      "score": 37,
+      "validators": []
+    },
+    "full": {
+      "index": 4,
+      "score": 45,
+      "validators": []
+    }
+  }
+}

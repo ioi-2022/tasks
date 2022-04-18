@@ -1,0 +1,121 @@
+{
+  "solution-author-ac.cpp": {
+    "verdict": "model_solution"
+  },
+  "solution-wiwitrifai-ac.cpp": {
+    "verdict": "correct"
+  },
+  "solution-linear.cpp": {
+    "verdict": "correct",
+    "except": {
+      "square-root": "incorrect",
+      "full": "incorrect"
+    }
+  },
+  "solution-sqrt.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "incorrect"
+    }
+  },
+  "solution-sample.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "samples": "correct"
+    }
+  },
+  "solution-prabowo-ac.cpp": {
+    "verdict": "correct"
+  },
+  "solution-prabowo-log2.cpp": {
+    "verdict": "partially_correct",
+    "except": {
+      "linear": "correct",
+      "square-root": "correct",
+      "samples": "correct"
+    }
+  },
+  "solution-prabowo-log3.cpp": {
+    "verdict": "partially_correct",
+    "except": {
+      "linear": "correct",
+      "square-root": "correct",
+      "samples": "correct"
+    }
+  },
+  "solution-prabowo-wa-small.cpp": {
+    "verdict": "incorrect"
+  },
+  "author-x-21.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "author-x-22.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "author-x-24.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "author-x-26.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "author-x-38.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "wiwitrifai-ac-truncate.cpp": {
+    "verdict": "correct"
+  },
+  "wiwitrifai-ac-simulate-all.cpp": {
+    "verdict": "correct"
+  },
+  "wiwitrifai-partial-heavy.cpp": {
+    "verdict": "correct",
+    "except": {
+      "square-root": "incorrect",
+      "full": "partially_correct"
+    }
+  },
+  "wiwitrifai-tle-heavy-simulate-all.cpp": {
+    "verdict": "time_limit",
+    "except": {
+      "samples": "correct"
+    }
+  },
+  "wiwitrifai-wa-empty.cpp": {
+    "verdict": "incorrect"
+  },
+  "wiwitrifai-wa-too-big.cpp": {
+    "verdict": "failed"
+  },
+  "wiwitrifai-wa-small-change.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "samples": "correct",
+      "linear": "correct",
+      "square-root": "correct"
+    }
+  },
+  "solution-amnu-ac.cpp": {
+    "verdict": "correct"
+  },
+  "solution-amnu-near-perfect.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  }
+}

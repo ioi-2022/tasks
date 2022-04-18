@@ -1,0 +1,10 @@
+{
+  "name": "cards",
+  "code": "cards",
+  "title": "Magic Cards",
+  "memory_limit": 2048,
+  "time_limit": 4.0,
+  "type": "Communication",
+  "num_processes": 2,
+  "grader_name": "stub"
+}

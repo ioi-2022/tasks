@@ -1,0 +1,23 @@
+{
+  "solution.cpp": {
+    "verdict": "model_solution"
+  },
+  "solution-one-team.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "one-team": "correct"
+    }
+  },
+  "jonathanirvings_wa_greedy.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "samples": "correct"
+    }
+  },
+  "jonathanirvings_wa_off_by_one.cpp": {
+    "verdict": "incorrect",
+    "except": {
+      "samples": "correct"
+    }
+  }
+}

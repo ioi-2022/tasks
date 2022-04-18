@@ -1,0 +1,119 @@
+{
+  "solution.cpp": {
+    "verdict": "model_solution"
+  },
+  "solution-subtask-1.cpp": {
+    "verdict": "protocol_violation",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct"
+    }
+  },
+  "solution-o-n-d.cpp": {
+    "verdict": "protocol_violation",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct"
+    }
+  },
+  "solution-o-n-ans.cpp": {
+    "verdict": "protocol_violation",
+    "except": {
+      "samples": "correct",
+      "quadratic": "correct"
+    }
+  },
+  "solution-subtask-2.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "protocol_violation"
+    }
+  },
+  "solution-binser-2nlogn.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "protocol_violation"
+    }
+  },
+  "solution-binser-nlogn.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-parallel-binser.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-invfact.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-invfact-opt.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-invfact-dnc.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-near-perfect-binser.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-near-perfect-dnc.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-prabowo-ac.cpp": {
+    "verdict": "correct"
+  },
+  "solution-prabowo-no-memo.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-prabowo-shuffle.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-hocky-binser.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-hocky-binser-bug.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-hocky-blacklist-binser.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  },
+  "solution-pwypeanut.cpp": {
+    "verdict": "correct",
+    "except": {
+      "full": "partially_correct"
+    }
+  }
+}

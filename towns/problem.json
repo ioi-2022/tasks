@@ -1,0 +1,10 @@
+{
+  "name": "towns",
+  "code": "towns",
+  "title": "Connected Towns",
+  "memory_limit": 2048,
+  "time_limit": 2.0,
+  "type": "Communication",
+  "num_processes": 1,
+  "grader_name": "stub"
+}

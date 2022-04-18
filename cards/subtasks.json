@@ -1,0 +1,30 @@
+{
+  "subtask_sensitive_validators": ["validator.cpp {subtask}"],
+  "subtasks": {
+    "samples": {
+      "index": 0,
+      "score": 0,
+      "validators": []
+    },
+    "k-equals-2": {
+      "index": 1,
+      "score": 5,
+      "validators": []
+    },
+    "k-equals-3": {
+      "index": 2,
+      "score": 11,
+      "validators": []
+    },
+    "k-equals-6": {
+      "index": 3,
+      "score": 24,
+      "validators": []
+    },
+    "full": {
+      "index": 4,
+      "score": 60,
+      "validators": []
+    }
+  }
+}
