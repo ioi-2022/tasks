@@ -1,0 +1,393 @@
+stages:
+  - verify
+  - gen
+  - invoke_all
+  - export_staging
+  - export_production
+
+before_script:
+  - git submodule update --init --recursive
+  - chmod +x tps/tps.sh
+
+.verify_template: &verify_template
+  stage: verify
+  script:
+    - cd "${CI_PROJECT_DIR}/${TASK}"
+    - ../tps/tps.sh verify
+  allow_failure: false
+
+.gen_template: &gen_template
+  stage: gen
+  script:
+    - cd "${CI_PROJECT_DIR}/${TASK}"
+    - ../tps/tps.sh gen
+  artifacts:
+    untracked: true
+    expire_in: 1 week
+  when: manual
+  allow_failure: false
+
+.invoke_all_template: &invoke_all_template
+  stage: invoke_all
+  script:
+    - cd "${CI_PROJECT_DIR}/${TASK}"
+    - ../tps/tps.sh invoke-all
+  when: manual
+
+.export_staging_template: &export_staging_template
+  stage: export_staging
+  script:
+    - cd "${CI_PROJECT_DIR}/${TASK}"
+    - ../tps/tps.sh export CMS -o ${TASK}
+    - scp -i ~/ansible -o StrictHostKeyChecking=no -o ProxyCommand="ssh -i ~/ansible ansible@$CONTROL_STAGING_HOST nc %h 22" $TASK.zip ansible@10.0.0.31:~/cms/
+    - ssh -i ~/ansible -o TCPKeepAlive=yes -o StrictHostKeyChecking=no -o ProxyCommand="ssh -i ~/ansible ansible@$CONTROL_STAGING_HOST nc %h 22" ansible@10.0.0.31 "cd cms; rm -rf $TASK; unzip $TASK.zip; cmsImportTask -L tps_task $TASK --update"
+  environment:
+    name: "staging_${TASK}"
+    deployment_tier: staging
+  when: manual
+  allow_failure: false
+
+.export_production_template: &export_production_template
+  stage: export_production
+  script:
+    - cd "${CI_PROJECT_DIR}/${TASK}"
+    - ../tps/tps.sh export CMS -o ${TASK}
+    - scp -i ~/ansible-production -o StrictHostKeyChecking=no -o ProxyCommand="ssh -i ~/ansible-production ansible@$CONTROL_HOST nc %h 22" $TASK.zip ansible@10.0.0.31:~/cms/
+    - ssh -i ~/ansible-production -o TCPKeepAlive=yes -o StrictHostKeyChecking=no -o ProxyCommand="ssh -i ~/ansible-production ansible@$CONTROL_HOST nc %h 22" ansible@10.0.0.31 "cd cms; rm -rf $TASK; unzip $TASK.zip; cmsImportTask -L tps_task $TASK --update"
+  environment:
+    name: "production_${TASK}"
+    deployment_tier: production
+  when: manual
+  only:
+    - main
+  allow_failure: false
+
+d1-fish:verify:
+  <<: *verify_template
+  variables:
+    TASK: fish
+
+d1-fish:gen:
+  <<: *gen_template
+  needs:
+    - d1-fish:verify
+  variables:
+    TASK: fish
+
+d1-fish:invoke_all:
+  <<: *invoke_all_template
+  needs:
+    - d1-fish:gen
+  variables:
+    TASK: fish
+
+d1-fish:export_staging:
+  <<: *export_staging_template
+  needs:
+    - d1-fish:gen
+  variables:
+    TASK: fish
+
+d1-fish:export_production:
+  <<: *export_production_template
+  needs:
+    - d1-fish:gen
+  variables:
+    TASK: fish
+
+d1-prison:verify:
+  <<: *verify_template
+  variables:
+    TASK: prison
+
+d1-prison:gen:
+  <<: *gen_template
+  needs:
+    - d1-prison:verify
+  variables:
+    TASK: prison
+
+d1-prison:invoke_all:
+  <<: *invoke_all_template
+  needs:
+    - d1-prison:gen
+  variables:
+    TASK: prison
+
+d1-prison:export_staging:
+  <<: *export_staging_template
+  needs:
+    - d1-prison:gen
+  variables:
+    TASK: prison
+
+d1-prison:export_production:
+  <<: *export_production_template
+  needs:
+    - d1-prison:gen
+  variables:
+    TASK: prison
+
+d1-towers:verify:
+  <<: *verify_template
+  variables:
+    TASK: towers
+
+d1-towers:gen:
+  <<: *gen_template
+  needs:
+    - d1-towers:verify
+  variables:
+    TASK: towers
+
+d1-towers:invoke_all:
+  <<: *invoke_all_template
+  needs:
+    - d1-towers:gen
+  variables:
+    TASK: towers
+
+d1-towers:export_staging:
+  <<: *export_staging_template
+  needs:
+    - d1-towers:gen
+  variables:
+    TASK: towers
+
+d1-towers:export_production:
+  <<: *export_production_template
+  needs:
+    - d1-towers:gen
+  variables:
+    TASK: towers
+
+d2-circuit:verify:
+  <<: *verify_template
+  variables:
+    TASK: circuit
+
+d2-circuit:gen:
+  <<: *gen_template
+  needs:
+    - d2-circuit:verify
+  variables:
+    TASK: circuit
+
+d2-circuit:invoke_all:
+  <<: *invoke_all_template
+  needs:
+    - d2-circuit:gen
+  variables:
+    TASK: circuit
+
+d2-circuit:export_staging:
+  <<: *export_staging_template
+  needs:
+    - d2-circuit:gen
+  variables:
+    TASK: circuit
+
+d2-circuit:export_production:
+  <<: *export_production_template
+  needs:
+    - d2-circuit:gen
+  variables:
+    TASK: circuit
+
+d2-insects:verify:
+  <<: *verify_template
+  variables:
+    TASK: insects
+
+d2-insects:gen:
+  <<: *gen_template
+  needs:
+    - d2-insects:verify
+  variables:
+    TASK: insects
+
+d2-insects:invoke_all:
+  <<: *invoke_all_template
+  needs:
+    - d2-insects:gen
+  variables:
+    TASK: insects
+
+d2-insects:export_staging:
+  <<: *export_staging_template
+  needs:
+    - d2-insects:gen
+  variables:
+    TASK: insects
+
+d2-insects:export_production:
+  <<: *export_production_template
+  needs:
+    - d2-insects:gen
+  variables:
+    TASK: insects
+
+d2-islands:verify:
+  <<: *verify_template
+  variables:
+    TASK: islands
+
+d2-islands:gen:
+  <<: *gen_template
+  needs:
+    - d2-islands:verify
+  variables:
+    TASK: islands
+
+d2-islands:invoke_all:
+  <<: *invoke_all_template
+  needs:
+    - d2-islands:gen
+  variables:
+    TASK: islands
+
+d2-islands:export_staging:
+  <<: *export_staging_template
+  needs:
+    - d2-islands:gen
+  variables:
+    TASK: islands
+
+d2-islands:export_production:
+  <<: *export_production_template
+  needs:
+    - d2-islands:gen
+  variables:
+    TASK: islands
+
+p-cards:verify:
+  <<: *verify_template
+  variables:
+    TASK: cards
+
+p-cards:gen:
+  <<: *gen_template
+  needs:
+    - p-cards:verify
+  variables:
+    TASK: cards
+
+p-cards:invoke_all:
+  <<: *invoke_all_template
+  needs:
+    - p-cards:gen
+  variables:
+    TASK: cards
+
+p-cards:export_staging:
+  <<: *export_staging_template
+  needs:
+    - p-cards:gen
+  variables:
+    TASK: cards
+
+p-cards:export_production:
+  <<: *export_production_template
+  needs:
+    - p-cards:gen
+  variables:
+    TASK: cards
+
+p-hoax:verify:
+  <<: *verify_template
+  variables:
+    TASK: hoax
+
+p-hoax:gen:
+  <<: *gen_template
+  needs:
+    - p-hoax:verify
+  variables:
+    TASK: hoax
+
+p-hoax:invoke_all:
+  <<: *invoke_all_template
+  needs:
+    - p-hoax:gen
+  variables:
+    TASK: hoax
+
+p-hoax:export_staging:
+  <<: *export_staging_template
+  needs:
+    - p-hoax:gen
+  variables:
+    TASK: hoax
+
+p-hoax:export_production:
+  <<: *export_production_template
+  needs:
+    - p-hoax:gen
+  variables:
+    TASK: hoax
+
+p-team:verify:
+  <<: *verify_template
+  variables:
+    TASK: team
+
+p-team:gen:
+  <<: *gen_template
+  needs:
+    - p-team:verify
+  variables:
+    TASK: team
+
+p-team:invoke_all:
+  <<: *invoke_all_template
+  needs:
+    - p-team:gen
+  variables:
+    TASK: team
+
+p-team:export_staging:
+  <<: *export_staging_template
+  needs:
+    - p-team:gen
+  variables:
+    TASK: team
+
+p-team:export_production:
+  <<: *export_production_template
+  needs:
+    - p-team:gen
+  variables:
+    TASK: team
+
+p-towns:verify:
+  <<: *verify_template
+  variables:
+    TASK: towns
+
+p-towns:gen:
+  <<: *gen_template
+  needs:
+    - p-towns:verify
+  variables:
+    TASK: towns
+
+p-towns:invoke_all:
+  <<: *invoke_all_template
+  needs:
+    - p-towns:gen
+  variables:
+    TASK: towns
+
+p-towns:export_staging:
+  <<: *export_staging_template
+  needs:
+    - p-towns:gen
+  variables:
+    TASK: towns
+
+p-towns:export_production:
+  <<: *export_production_template
+  needs:
+    - p-towns:gen
+  variables:
+    TASK: towns
